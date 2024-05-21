@@ -42,13 +42,12 @@ const MeetingTypeList = () => {
         handleClick={() => router.push('/recordings')}
       />
       <MeetingModal
-        isOpen={meetingState==='isInstantMeeting'}
-        onClose={()=>setMeetingState(undefined)}
+        isOpen={meetingState === 'isInstantMeeting'}
+        onClose={() => setMeetingState(undefined)}
         title="Start an Instant Meeting"
         className='text-center'
         buttonText='Start Meeting'
-        handleClick={createMeeting}
-      />
+        handleClick={createMeeting} image={""} buttonIcon={""}      />
     </section>
   )
 }
